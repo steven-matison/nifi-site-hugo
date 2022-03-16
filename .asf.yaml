@@ -1,0 +1,9 @@
+github:
+  description: "Website sources for the Apache NiFi website"
+  homepage: https://nifi.apache.org/
+  labels:
+    - apache
+    - nifi
+    - hugo
+    - website
+
