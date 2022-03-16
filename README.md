@@ -35,23 +35,23 @@ This initial repo is the minimal amount of changes necessary to deploy the curre
 ## Hugo Conversion Notes
 
 ### Site Conversion
-  issues with {{assets}}
-    !! ASSETS folder is missing in the repo but files are on the live site (I did wget for missing files)
-      !! need a solution to fix variable or full find replace to /assets
+  - issues with {{assets}}
+    - !! ASSETS folder is missing in the repo but files are on the live site (I did wget for missing files)
+    - !! need a solution to fix variable or full find replace to /assets
 
 ### Page Conversion
-  renamed all .hbs to html
-  !! issues with &amp;amp; !! 
+  - renamed all .hbs to html
+  - !! issues with &amp;amp; !! 
 
 
 ### NiFi Asci Docs
-  !! Need to handle nifi-docs from main site
-          <iframe src="docs/nifi-docs/index.html"></iframe> in docs.html
+  - !! Need to handle nifi-docs from main site
+          `<iframe src="docs/nifi-docs/index.html"></iframe>` in docs.html
     - some of this process is in place on the airflow site including building multi versions
     - ?? take a look at what is done in jena to link to apache/jena repo ??
 
 ### MiNiFi
-  sub folder pages need to be __index.
-  !! issue with site reloading /minifi/index.html to /minifi/ (blank page)
+  - ?? sub folder index pages needed to be __index ??
+  - !! issue with site reloading /minifi/index.html to /minifi/ (blank page)
     - solved by adding slug to front matter
-  !! menu links stay relative to /minifi/ when in this subpage
+  - !! menu links stay relative to /minifi/ when in this subpage
